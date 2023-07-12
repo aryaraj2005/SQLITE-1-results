@@ -1,0 +1,110 @@
+-------null inserted at 10 id for salary ------------
+----is null operator-----
+10|lohit|prajapti||22-08-2005|BHR
+All worker list--
+1|Ram|kumar|50000|12-05-2002|HR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|90000|23-01-1989|HR
+6|sohaam|goyal|40000|22-08-2005|BHR
+7|sohail|ragahw|50000|22-08-2005|BHR
+8|XYJ|mishra|110000|22-08-2005|RHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+10|lohit|prajapti||22-08-2005|BHR
+All the worker salary > 5000------
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|90000|23-01-1989|HR
+8|XYJ|mishra|110000|22-08-2005|RHR
+All worker list departemt HR---------
+1|Ram|kumar|50000|12-05-2002|HR
+4|rohan|singh|90000|23-01-1989|HR
+All worker list slary between 0 to 70000
+1|Ram|kumar|50000|12-05-2002|HR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+6|sohaam|goyal|40000|22-08-2005|BHR
+7|sohail|ragahw|50000|22-08-2005|BHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+All worker list   OR operator-----
+1|Ram|kumar|50000|12-05-2002|HR
+4|rohan|singh|90000|23-01-1989|HR
+7|sohail|ragahw|50000|22-08-2005|BHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+----All worker list   IN operator-----
+1|Ram|kumar|50000|12-05-2002|HR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|90000|23-01-1989|HR
+6|sohaam|goyal|40000|22-08-2005|BHR
+7|sohail|ragahw|50000|22-08-2005|BHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+10|lohit|prajapti||22-08-2005|BHR
+-----All worker list   NOT IN operator-----
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+8|XYJ|mishra|110000|22-08-2005|RHR
+-----All worker list  wildcard %  LIKE keyword    ----
+Shyaam
+sohaam
+-----All worker list  wildcard  _ LIKE keyword    ----
+kumar
+goyal
+----------------Soriting KEY --ORDER BY --------  ----
+10|lohit|prajapti||22-08-2005|BHR
+6|sohaam|goyal|40000|22-08-2005|BHR
+1|Ram|kumar|50000|12-05-2002|HR
+7|sohail|ragahw|50000|22-08-2005|BHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|90000|23-01-1989|HR
+8|XYJ|mishra|110000|22-08-2005|RHR
+----------------Soriting KEY --ORDER BY DESCENDING  --------  ----
+8|XYJ|mishra|110000|22-08-2005|RHR
+4|rohan|singh|90000|23-01-1989|HR
+3|Raman|pandey|70000|12-06-1906|BHR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+1|Ram|kumar|50000|12-05-2002|HR
+7|sohail|ragahw|50000|22-08-2005|BHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+6|sohaam|goyal|40000|22-08-2005|BHR
+10|lohit|prajapti||22-08-2005|BHR
+----------------no of groups KEY --DISTINCT ------------
+HR
+AHR
+BHR
+RHR
+All worker list of salary -----
+50000
+60000
+70000
+90000
+40000
+50000
+110000
+50000
+
+----------------Grouping by  KEY --GROUP BY --------  ----
+Error: near line 80: in prepare, near "GROUP": syntax error (1)
+All worker list of first name -----
+Ram
+Shyaam
+Raman
+rohan
+sohaam
+sohail
+XYJ
+Lohar
+lohit
+All  worker bonus  list-----------   
+1|5000|16-7-2005
+2|5000|16-7-2005
+2|4000|16-7-2005
+3|8000|16-7-2005
+All worker title list---------------
+1|hr|16-05-2006
+2|mhr|16-05-2006
+3|ohr|16-05-2006
+2|hr|16-05-2006
+1|Ahr|16-05-2006
+plus  operator-----
+54
