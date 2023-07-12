@@ -1,3 +1,17 @@
+
+English
+Recent
+Login
+Sign up
+Enter a title...
+ 
+ 
+      
+
+
+
+  
+Output
 -------null inserted at 10 id for salary ------------
 ----is null operator-----
 10|lohit|prajapti||22-08-2005|BHR
@@ -5,7 +19,7 @@ All worker list--
 1|Ram|kumar|50000|12-05-2002|HR
 2|Shyaam|Sinha|60000|19-09-2003|AHR
 3|Raman|pandey|70000|12-06-1906|BHR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 6|sohaam|goyal|40000|22-08-2005|BHR
 7|sohail|ragahw|50000|22-08-2005|BHR
 8|XYJ|mishra|110000|22-08-2005|RHR
@@ -14,11 +28,11 @@ All worker list--
 All the worker salary > 5000------
 2|Shyaam|Sinha|60000|19-09-2003|AHR
 3|Raman|pandey|70000|12-06-1906|BHR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 8|XYJ|mishra|110000|22-08-2005|RHR
 All worker list departemt HR---------
 1|Ram|kumar|50000|12-05-2002|HR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 All worker list slary between 0 to 70000
 1|Ram|kumar|50000|12-05-2002|HR
 2|Shyaam|Sinha|60000|19-09-2003|AHR
@@ -28,13 +42,13 @@ All worker list slary between 0 to 70000
 9|Lohar|prajapti|50000|22-08-2005|BHR
 All worker list   OR operator-----
 1|Ram|kumar|50000|12-05-2002|HR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 7|sohail|ragahw|50000|22-08-2005|BHR
 9|Lohar|prajapti|50000|22-08-2005|BHR
 ----All worker list   IN operator-----
 1|Ram|kumar|50000|12-05-2002|HR
 3|Raman|pandey|70000|12-06-1906|BHR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 6|sohaam|goyal|40000|22-08-2005|BHR
 7|sohail|ragahw|50000|22-08-2005|BHR
 9|Lohar|prajapti|50000|22-08-2005|BHR
@@ -56,11 +70,11 @@ goyal
 9|Lohar|prajapti|50000|22-08-2005|BHR
 2|Shyaam|Sinha|60000|19-09-2003|AHR
 3|Raman|pandey|70000|12-06-1906|BHR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 8|XYJ|mishra|110000|22-08-2005|RHR
 ----------------Soriting KEY --ORDER BY DESCENDING  --------  ----
 8|XYJ|mishra|110000|22-08-2005|RHR
-4|rohan|singh|90000|23-01-1989|HR
+4|rohan|singh|85000|23-01-1989|HR
 3|Raman|pandey|70000|12-06-1906|BHR
 2|Shyaam|Sinha|60000|19-09-2003|AHR
 1|Ram|kumar|50000|12-05-2002|HR
@@ -73,19 +87,91 @@ HR
 AHR
 BHR
 RHR
+----------------Grouping by  KEY --GROUP BY aggregation is very imp like count , avg  , max , ,min  --------  ----
+AHR|1
+BHR|5
+HR|2
+RHR|1
+----------------Avg salary by  using --GROUP BY --------  ----
+AHR|60000.0
+BHR|52500.0
+HR|67500.0
+RHR|110000.0
+2|Shyaam|Sinha|60000|19-09-2003|AHR|60000.0
+3|Raman|pandey|70000|12-06-1906|BHR|52500.0
+1|Ram|kumar|50000|12-05-2002|HR|67500.0
+8|XYJ|mishra|110000|22-08-2005|RHR|110000.0
+----------------MINIMUM  salary by  using --GROUP BY --------  ----
+AHR|60000
+BHR|40000
+HR|50000
+RHR|110000
+----------------Max  salary by  using --GROUP BY --------  ----
+AHR|60000
+BHR|70000
+HR|85000
+RHR|110000
+---------Grouping using filter KEY @having like Department but salary > 70000  --------------
+BHR|5
+RHR|1
+---------Grouping using filter KEY @having like Department but no of employee >= 2  --------------
+BHR|5
+HR|2
 All worker list of salary -----
 50000
 60000
 70000
-90000
+85000
 40000
 50000
 110000
 50000
 
-----------------Grouping by  KEY --GROUP BY --------  ----
-Error: near line 80: in prepare, near "GROUP": syntax error (1)
-All worker list of first name -----
+--------Data MODIFICATION LANGUAGE INSERT , DELETE , UPDATE---------------
+1|Ram|kumar|50000|12-05-2002|HR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|85000|23-01-1989|HR
+6|sohaam|goyal|40000|22-08-2005|BHR
+7|sohail|ragahw|50000|22-08-2005|BHR
+8|XYJ|mishra|110000|22-08-2005|RHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+10|lohit|prajapti||22-08-2005|BHR
+11|Arjun |sinha |46000|14-09-1989|HBR
+1|Ram|kumar|50000|12-05-2002|HR
+2|Shyaam|Sinha|60000|19-09-2003|AHR
+3|Raman|pandey|70000|12-06-1906|BHR
+4|rohan|singh|85000|23-01-1989|HR
+6|sohaam|goyal|40000|22-08-2005|BHR
+7|sohail|ragahw|50000|22-08-2005|BHR
+8|XYJ|mishra|110000|22-08-2005|RHR
+9|Lohar|prajapti|50000|22-08-2005|BHR
+10|lohit|prajapti||22-08-2005|BHR
+11|Arjun |sinha |46000|14-09-1989|HBR
+12|bheem|dahia|550000|4-04-2006|XHR
+--------Data MODIFICATION LANGUAGE update multiple row--------------
+1|Ram|kumar|100000|12-05-2002|Android developer
+2|Shyaam|Sinha|100000|19-09-2003|Android developer
+3|Raman|pandey|100000|12-06-1906|Android developer
+4|rohan|singh|100000|23-01-1989|Android developer
+6|sohaam|goyal|100000|22-08-2005|Android developer
+7|sohail|ragahw|100000|22-08-2005|Android developer
+8|XYJ|mishra|100000|22-08-2005|Android developer
+9|Lohar|prajapti|100000|22-08-2005|Android developer
+10|lohit|prajapti|100000|22-08-2005|Android developer
+11|Arjun |sinha |100000|14-09-1989|Android developer
+12|bheem|dahia|100000|4-04-2006|Android developer
+--------Data MODIFICATION LANGUAGE delete-------------------------
+1
+2
+3
+4
+6
+7
+8
+9
+11
+12
 Ram
 Shyaam
 Raman
@@ -94,14 +180,95 @@ sohaam
 sohail
 XYJ
 Lohar
-lohit
+Arjun 
+bheem
+--------Data MODIFICATION LANGUAGE  REPLACE if already 
+  present then replace if not then insert new entry------------------------
+2|Shyaam|Sinha|100000|19-09-2003|Android developer
+3|Raman|pandey|100000|12-06-1906|Android developer
+4|rohan|singh|100000|23-01-1989|Android developer
+6|sohaam|goyal|100000|22-08-2005|Android developer
+7|sohail|ragahw|100000|22-08-2005|Android developer
+8|XYJ|mishra|100000|22-08-2005|Android developer
+9|Lohar|prajapti|100000|22-08-2005|Android developer
+11|Arjun |sinha |100000|14-09-1989|Android developer
+12|bheem|dahia|100000|4-04-2006|Android developer
+1|ramayan||||
+All worker list of salary -----
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+100000
+
+All worker list of first name -----
+Shyaam
+Raman
+rohan
+sohaam
+sohail
+XYJ
+Lohar
+Arjun 
+bheem
+ramayan
 All  worker bonus  list-----------   
 1|5000|16-7-2005
 2|5000|16-7-2005
 2|4000|16-7-2005
 3|8000|16-7-2005
 All worker title list---------------
-1|hr|16-05-2006
+1|hr|16-05-2006|1
+2|mhr|16-05-2006|5
+3|ohr|16-05-2006 |7
+4|hr|16-05-2006|9
+5|Ahr|16-05-2006|12
+ ----- suppose i want to delete the hr 001 RAM from workers 
+beciuse he is no more remain employee but if if i delet him from worker
+     table but he is available in title so this is Integeraty constrainsts
+     , so we can not update or delete from parents (workers)
+     for delete update we have to maintain th constrainsts-----
+    -----on delete CASCADE or NUll method
+2|Shyaam|Sinha|100000|19-09-2003|Android developer
+3|Raman|pandey|100000|12-06-1906|Android developer
+4|rohan|singh|100000|23-01-1989|Android developer
+6|sohaam|goyal|100000|22-08-2005|Android developer
+7|sohail|ragahw|100000|22-08-2005|Android developer
+8|XYJ|mishra|100000|22-08-2005|Android developer
+9|Lohar|prajapti|100000|22-08-2005|Android developer
+11|Arjun |sinha |100000|14-09-1989|Android developer
+12|bheem|dahia|100000|4-04-2006|Android developer
+1|hr|16-05-2006|1
+2|mhr|16-05-2006|5
+3|ohr|16-05-2006 |7
+4|hr|16-05-2006|9
+5|Ahr|16-05-2006|12
+plus  operator-----
+54
+Create table  -----
+1|Ankit|17
+2|Ramya|18
+3|Ram|16
+Create table  Course -----
+101|c
+102|c++
+103|DBMS
+Create table Enroll  -----
+1|101|5-jun-2021
+1|102|5-jun-2021
+2|103|6-jun-2021
+delete from parents  -----
+list of remaiming  Student  -----
+1|Ankit|17
+3|Ram|16
+list of remaiming  in Enroll  -----
+1|101|5-jun-2021
+1|102|5-jun-2021
+2|103|6-jun-2021
 2|mhr|16-05-2006
 3|ohr|16-05-2006
 2|hr|16-05-2006
